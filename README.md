@@ -30,6 +30,25 @@ class3_books/
     └── ...
 ```
 
+### Downloading the Dataset
+
+**Note:** Due to file upload restrictions, the actual syllabus PDF files are not included in this repository.
+
+To use the chatbot, you must manually download the official NCERT Class 3 textbooks in PDF format. Please follow these instructions:
+
+1. **Go to the official NCERT textbook website:**  
+   [https://ncert.nic.in/textbook.php](https://ncert.nic.in/textbook.php)
+
+2. **Select Class 3** and choose the subjects (English, EVS, Maths).
+
+3. **Download the chapter PDFs** for each subject.
+
+4. **Organize the PDFs:** Place the PDFs into appropriately named `.zip` archives (e.g., `ENGLISH.zip`, `MATHS.zip`, `EVS.zip`), with each archive containing the individual chapter PDFs for the subject.
+
+5. **Create the folder:** Place your zipped subject files in a folder named `class3_books/` in the project root.
+
+Your folder structure should look like the example above.
+
 ## How It Works
 
 1. **Data Loading:** All PDFs are extracted from the zip files, and text is extracted and cleaned.
@@ -59,10 +78,11 @@ pip install requests sentence-transformers pymupdf
 
 ## Usage
 
-1. Place your subject zip files (containing chapter PDFs) in the `class3_books/` folder.
-2. Make sure Ollama is running with your preferred model (e.g., `ollama run gemma:2b-instruct`).
-3. Run the notebook: `query_chatbot.ipynb`
-4. Interact with the chatbot in the terminal or notebook output.
+1. Download the NCERT Class 3 subject chapter PDFs from the official NCERT site as described above.
+2. Organize them into zipped subject files in the `class3_books/` folder.
+3. Make sure Ollama is running with your preferred model (e.g., `ollama run gemma:2b-instruct`).
+4. Run the notebook: `query_chatbot.ipynb`
+5. Interact with the chatbot in the terminal or notebook output.
 
 ## Example Interaction
 
